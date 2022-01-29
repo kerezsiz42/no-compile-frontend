@@ -1,0 +1,9 @@
+version: '3'
+services:
+  frontend:
+    build: ./
+    environment:
+      FRONTEND_APP_API_URL: http://localhost:8000/api
+      FRONTEND_APP_UI_AVATARS_API_URL: https://eu.ui-avatars.com/api
+    ports:
+      - "8080:80"
